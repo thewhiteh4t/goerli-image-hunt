@@ -9,7 +9,7 @@ from web3 import Web3
 from web3.middleware import geth_poa_middleware
 
 api_url = 'https://api-goerli.etherscan.io/api'
-endpoint = 'https://goerli.prylabs.net'
+endpoint = 'https://rpc.goerli.mudit.blog/'
 
 start_date = '2020-07-30'
 end_date = '2020-08-01'
@@ -171,6 +171,7 @@ def fetch_blk_info():
 				count += 1
 				fetch_blks(w3, blk_id, outfile)
 				print('[!] Fetching Blocks : {} / {} | Current Block : {}'.format(str(count), str(total_blks), str(blk_id)), end='\r')
+				time.sleep(1)
 	else:
 		print('\n[-] Failed to Connect...Exiting')
 		exit()
