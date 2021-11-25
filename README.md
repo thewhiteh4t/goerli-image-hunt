@@ -24,12 +24,15 @@ pip3 install requests, web3
 
 ### Usage
 
-**Step 1** : Set `Start` and `End` dates in the script
+**Step 1** :
+
+```bash
+chmod +x goerli-image-hunt.py
+./goerli_img_hunt.py -s <start date> -e <end date>
+```
 
 **Note**
-* Start and End dates should be in ascending order and in the past, or the script will break, I have not added proper exception handling yet
-* **Date Format** : YYYY-MM-DD [ Example : 2020-08-05]
+
+- **Date Format** : YYYY-MM-DD [ Example : 2020-08-05]
 
 **Step 2** : Launch the script and wait until it finds a match, it can take a long time depending on the date range, have patience
-
-
